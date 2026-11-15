@@ -1,0 +1,39 @@
+@use "../../../styles/variables.scss" as *;
+.content {
+  display: flex;
+  aside {
+    width: 20%;
+  }
+  main {
+    width: 80%;
+    height: 100vh;
+    background-color: $background-light;
+    .header {
+      padding: 30px 60px;
+      &--title {
+        color: $font-title;
+        font-size: 32px;
+      }
+      &--subtitle {
+        color: $font-green;
+        font-size: 14px;
+      }
+    }
+    .card {
+      margin: 30px 60px;
+      padding: 16px 20px;
+      background-color: $background-highlighted;
+      border-radius: 16px;
+      &--date {
+        text-transform: uppercase;
+        color: $font-info;
+        font-size: 10px;
+      }
+      &--title {
+        color: $font-title;
+        font-size: 29px;
+        margin: 16px 0;
+      }
+    }
+  }
+}
