@@ -15,5 +15,62 @@
       <h1 class="card--title">Hola, Lucía. El agua te espera.</h1>
       <p>Tu próxima clase es el lunes a las 18:00. Nos vemos en la piscina.</p>
     </div>
+
+    <section class="grid">
+      <div class="grid--card1">
+        <span class="grid--card1__header">
+          <h6 class="grid--card1__header--title">Tus próximas clases</h6>
+          <a class="grid--card1__header--link" href="/"
+            >Ver calendario
+            <img
+              class="icon-link"
+              src="/icons/arrow-link-right.svg"
+              alt="Redirigir"
+            />
+          </a>
+        </span>
+        <div class="grid--card1__body">
+          <!-- dinámico, vendrá un array del back y recorrera estar tarjetas -->
+          <div class="grid--card1__body--item">
+            <div class="grid--card1__body--item__date">
+              <p class="grid--card1__body--item__date--weekday">Lun</p>
+              <p class="grid--card1__body--item__date--day">16</p>
+            </div>
+            <div class="grid--card1__body--item__info">
+              <p class="grid--card1__body--item__info--title">
+                Lunes, 16 de noviembre
+              </p>
+              <p class="grid--card1__body--item__info--time">
+                18:00 – 18:45 · Grupo Agua
+              </p>
+              <!-- condicional si no se puede cancelar muestra otro mensaje -->
+              <p class="grid--card1__body--item__info--cancelation">
+                Cancela antes del dom. 15 a las 18:00
+              </p>
+            </div>
+            <button class="grid--card1__body--item__btn">Cancelar clase</button>
+          </div>
+          <div class="grid--card1__body--item">
+            <div class="grid--card1__body--item__date">
+              <p class="grid--card1__body--item__date--weekday">Mier</p>
+              <p class="grid--card1__body--item__date--day">18</p>
+            </div>
+            <div class="grid--card1__body--item__info">
+              <p class="grid--card1__body--item__info--title">
+                Miercoes, 18 de noviembre
+              </p>
+              <p class="grid--card1__body--item__info--time">
+                18:00 – 18:45 · Grupo Agua
+              </p>
+              <!-- condicional si no se puede cancelar muestra otro mensaje -->
+              <p class="grid--card1__body--item__info--cancelation">
+                Cancela antes del martes. 15 a las 18:00
+              </p>
+            </div>
+            <button class="grid--card1__body--item__btn">Cancelar clase</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </div>

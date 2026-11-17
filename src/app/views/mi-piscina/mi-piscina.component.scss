@@ -35,5 +35,90 @@
         margin: 16px 0;
       }
     }
+    .grid {
+      display: grid;
+      grid-template-columns: 716px 384px;
+      margin: 30px 60px;
+      &--card1 {
+        padding: 16px 20px;
+        background-color: white;
+        border-radius: 16px;
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          &--title {
+            font-size: 20px;
+            color: $font-title;
+          }
+          &--link {
+            color: $font-highlighted;
+            font-size: 12px;
+          }
+        }
+
+        &__body {
+          &--item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            &__date {
+              width: 64px;
+              height: 73px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              border-radius: 16px;
+              background-color: $background-light;
+              &--weekday {
+                color: $font-green;
+                font-size: 10px;
+              }
+              &--day {
+                color: $font-title;
+                font-size: 40px;
+                font-weight: bold;
+              }
+            }
+            &__info {
+              &--title {
+                color: $font-title;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 20px;
+              }
+              &--time {
+                font-size: 13px;
+                color: $font-green;
+                line-height: 20px;
+              }
+              &--cancelation {
+                font-size: 11px;
+                color: $font-green;
+                line-height: 20px;
+              }
+            }
+            &__btn {
+              width: 140px;
+              padding: 20px;
+              border-radius: 16px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              color: $font-highlighted;
+              background-color: $background-light;
+            }
+          }
+        }
+      }
+    }
   }
+}
+.icon-link {
+  width: 12px;
+  height: 12px;
+  vertical-align: -1px;
 }
